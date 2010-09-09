@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 2) do
+ActiveRecord::Schema.define(:version => 3) do
 
   create_table "accounts", :force => true do |t|
     t.string "name"
@@ -26,6 +26,12 @@ ActiveRecord::Schema.define(:version => 2) do
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "works", :force => true do |t|
+    t.string "name",        :limit => 100
+    t.binary "photo"
+    t.text   "description", :limit => 500
   end
 
 end

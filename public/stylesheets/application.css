@@ -129,6 +129,23 @@ body {
       body > footer p a {
         color: black; }
 
+section.work {
+  border: 1px solid #999999;
+  float: left;
+  height: 18.125em;
+  margin: 0.5em;
+  padding: 0.625em;
+  text-align: center; }
+  section.work h3, section.work p {
+    text-align: justify;
+    width: 12.5em;
+    margin: 0 auto; }
+  section.work h3 {
+    padding-bottom: 0.625em; }
+  section.work p {
+    font-size: 0.75em;
+    width: 16.7em; }
+
 .img_flt_rt {
   float: right; }
 

@@ -4,7 +4,7 @@
     %title
       = ["Evan Machnic", @title].compact.join(" => ")
     = stylesheet_link_tag "reset", "application"
-    = javascript_include_tag 'jquery', 'application'
+    = javascript_include_tag 'jquery', 'application', 'html5'
     = javascript_include_tag "https://www.tungle.me/portal/js/plugins/tungle.mwmWidget.js"
   %body
     %header
@@ -21,7 +21,7 @@
             = link_to "resume", url_for(:resume), :class => is_active?("Resume")
           %li &#47;&#47;
           %li
-            = link_to "work"
+            = link_to "work", url_for(:work, :index), :class => is_active?("Work")
           %li &#47;&#47;
           %li
             = link_to "interact", url_for(:interact), :class => is_active?("Interact")
