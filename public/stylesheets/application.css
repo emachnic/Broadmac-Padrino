@@ -1,0 +1,125 @@
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+header, footer, article, section, nav, aside, hgroup {
+  display: block; }
+
+body > header, body > #main, body > footer {
+  margin: 0 auto;
+  width: 96em; }
+
+body {
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 62.5%; }
+  body > header {
+    border-bottom: 1px solid black;
+    padding: 2em 0; }
+    body > header a img {
+      float: left;
+      height: 11.3em;
+      width: 30em; }
+    body > header nav {
+      float: right;
+      font-size: 2em;
+      padding: 60px 0 0 0; }
+      body > header nav ul {
+        display: inline; }
+        body > header nav ul li {
+          color: #aaaaaa;
+          display: inline;
+          padding: 0 5px; }
+          body > header nav ul li a {
+            color: #888888; }
+            body > header nav ul li a:hover, body > header nav ul li a.active {
+              color: black;
+              text-decoration: underline; }
+  body #content {
+    border-right: 1px dashed #aaaaaa;
+    float: left;
+    min-height: 60em;
+    padding: 1em;
+    width: 72em; }
+    body #content article {
+      font-size: 1.6em; }
+      body #content article > header {
+        border-bottom: 1px dashed #aaaaaa;
+        padding: 10px 0; }
+        body #content article > header h2 {
+          font-size: 1.625em;
+          float: left; }
+          body #content article > header h2 a {
+            color: black; }
+        body #content article > header .date {
+          color: #555555;
+          float: right;
+          font-size: 0.75em; }
+      body #content article > section p {
+        line-height: 1.25em;
+        padding: 0.625em 0; }
+    body #content .resume h1 {
+      font-size: 2.5em; }
+    body #content .resume h2 {
+      font-size: 1.25em;
+      font-weight: bold;
+      padding-top: 1.25em; }
+    body #content .resume p {
+      line-height: 1.25em;
+      padding-left: 1.25em; }
+      body #content .resume p.job {
+        padding-top: 1.25em; }
+    body #content .resume a {
+      color: black;
+      font-weight: bold; }
+      body #content .resume a.std {
+        font-weight: normal; }
+    body #content .resume ul {
+      list-style: circle;
+      margin-left: 2.5em;
+      padding-top: 0.938em; }
+      body #content .resume ul li {
+        padding: 0.313em 0; }
+        body #content .resume ul li:last-child {
+          padding-bottom: 0; }
+    body #content .resume table {
+      padding-left: 1.25em; }
+      body #content .resume table td {
+        padding: 0.5em 0; }
+  body #sidebar {
+    float: right;
+    padding-top: 2em;
+    width: 19.2em; }
+    body #sidebar h2 {
+      font-size: 2.4em; }
+    body #sidebar ul {
+      list-style: circle;
+      margin: 0.5em 0 2em 2em; }
+      body #sidebar ul li {
+        font-size: 1.4em;
+        padding: 0.5em 0; }
+        body #sidebar ul li a {
+          color: #333333; }
+    body #sidebar .book {
+      clear: both;
+      font-size: 1.4em;
+      padding: 1em 0; }
+      body #sidebar .book .credit {
+        color: #333333;
+        font-size: 0.714em; }
+      body #sidebar .book a {
+        color: black; }
+        body #sidebar .book a img {
+          float: left;
+          padding-right: 0.5em; }
+  body > footer {
+    border-top: 1px solid black;
+    clear: both; }
+    body > footer p {
+      color: #333333;
+      padding: 1em; }
+      body > footer p a {
+        color: black; }
+
+.clear {
+  clear: both; }

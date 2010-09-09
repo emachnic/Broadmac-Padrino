@@ -1,0 +1,10 @@
+%article
+  %header
+    %h2
+      = link_to post.title, url_for(:posts, :show, :id => post)
+    .date
+      Created
+      = time_ago_in_words(post.created_at || Time.now) + ' ago'
+    .clear
+  %section
+    = simple_format(post.body)

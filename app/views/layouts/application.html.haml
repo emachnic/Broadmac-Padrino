@@ -1,0 +1,79 @@
+!!! 5
+%html
+  %head
+    %title
+      = ["Evan Machnic", @title].compact.join(" => ")
+    = stylesheet_link_tag "reset", "application"
+    = javascript_include_tag 'jquery', 'application'
+    = javascript_include_tag "https://www.tungle.me/portal/js/plugins/tungle.mwmWidget.js"
+  %body
+    %header
+      = link_to image_tag("evan_machnic_logo.png", :alt => "Evan Machnic Logo", :title => "Evan Machnic Home"), "/"
+      %nav
+        %ul
+          %li
+            = link_to "writing", url_for(:posts, :index), :class => is_active?("Writing")
+          %li &#47;&#47;
+          %li
+            = link_to "info"
+          %li &#47;&#47;
+          %li
+            = link_to "resume", url_for(:resume), :class => is_active?("Resume")
+          %li &#47;&#47;
+          %li
+            = link_to "work"
+          %li &#47;&#47;
+          %li
+            = link_to "interact"
+      .clear
+    #main
+      #content
+        = yield
+      #sidebar
+        %h2 Favorite Sites
+        %ul
+          %li
+            = link_to "A List Apart", "http://www.alistapart.com"
+          %li
+            = link_to "Railscasts", "http://railscasts.com"
+          %li
+            = link_to "Ruby on Rails", "http://rubyonrails.org"
+          %li
+            = link_to "Signal vs. Noise", "http://37signals.com/svn"
+          %li
+            = link_to "TeachMeToCode", "http://teachmetocode.com"
+        %h2 Books I Like
+        %p.book
+          = link_to image_tag("tpp.jpg", :alt => "Pragmatic Programmer Cover", :title => "The Pragmatic Programmer"), "http://pragprog.com/titles/tpp/the-pragmatic-programmer"
+          = link_to "The Pragmatic Programmer: From Journeyman to Master", "http://pragprog.com/titles/tpp/the-pragmatic-programmer"
+          %br
+          %span.credit by Andrew Hunt and David Thomas
+        %p.book
+          = link_to image_tag("rails_tutorial.png", :alt => "Rails Tutorial Logo", :title => "Rails Tutorial"), "http://railstutorial.org"
+          = link_to "Rails Tutorial", "http://railstutorial.org"
+          %br
+          %span.credit by Michael Hartl
+        %p.book
+          = link_to image_tag("rework.jpg", :alt => "Rework Cover", :title => "Rework"), "http://37signals.com/rework"
+          = link_to "Rework", "http://37signals.com/rework"
+          %br
+          %span.credit by Jason Fried and David Henemeier Hansson
+        /
+          = image_tag "https://www.tungle.me/public/emachnic/busyicon", :class => "tungle-me", :teml => "emachnic"
+          %object{ :type => "application/x-shockwave-flash", :data => "https://clients4.google.com/voice/embed/webCallButton",
+          :width => "230", :height => "85" }
+          %param{ :name => "movie", :value => "https://clients4.google.com/voice/embed/webCallButton" }
+          %param{ :name => "wmode", :value => "transparent" }
+          %param{ :name => "FlashVars", :value => "id=c21474293bfa9a582a54e84190b22b2ad222ad56&style=0" }
+    %footer
+      %p
+        Copywrite &copy; 2010
+        &#47;&#47;
+        = mail_to "emachnic@broadmac.net", "Evan Machnic", :subject => "Feedback"
+        &#47;&#47;
+        Running
+        = link_to "Padrino v. 0.9.15", "http://www.padrinorb.com"
+        on
+        = link_to "Sinatra v. 1.0", "http://www.sinatrarb.com"
+        at
+        = link_to "Heroku", "http://www.heroku.com"
