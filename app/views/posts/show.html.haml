@@ -1,11 +1,13 @@
 - @title = @post.title
-#show
-  .post
+%article
+  %header
     %h2
       = @post.title
     .date
       = time_ago_in_words(@post.created_at || Time.now) + ' ago'
-    .body
-      = simple_format(@post.body)
-%p
-  = link_to 'View all posts', url_for(:posts, :index)
+    .clear
+  %section
+    = simple_format(@post.body)
+  %p
+    %b
+      = link_to 'View all posts', url_for(:posts, :index)

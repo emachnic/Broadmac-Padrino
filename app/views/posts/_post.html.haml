@@ -7,4 +7,10 @@
       = time_ago_in_words(post.created_at || Time.now) + ' ago'
     .clear
   %section
-    = simple_format(post.body)
+    %p
+      = truncate(post.body, :length => 500)
+    .read_more
+      %p
+        = link_to "read more", url_for(:posts, :show, :id => post)
+      .clear
+      %hr

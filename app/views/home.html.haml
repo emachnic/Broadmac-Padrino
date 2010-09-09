@@ -1,2 +1,12 @@
 - @title = "Home"
-= partial 'posts/post', :object => @post
+%article
+  %header
+    %h2
+      = @post.title
+    .date
+      Created
+      = time_ago_in_words(@post.created_at || Time.now) + ' ago'
+    .clear
+  %section
+    %p
+      = simple_format(@post.body)
