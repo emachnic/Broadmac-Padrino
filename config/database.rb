@@ -25,7 +25,7 @@ ActiveRecord::Base.configurations[:production] = {
   :encoding => 'utf8',
   :database => postgres.user,
   :username => postgres.user,
-  :password => postgres.user,
+  :password => postgres.password,
   :host     => postgres.host
 
 }
