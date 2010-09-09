@@ -1,5 +1,5 @@
 !!! 5
-%html
+%html{ :xmlns => "http://www.w3.org/1999/xhtml" }
   %head
     %title
       = ["Evan Machnic", @title].compact.join(" => ")
@@ -15,7 +15,7 @@
             = link_to "writing", url_for(:posts, :index), :class => is_active?("Writing")
           %li &#47;&#47;
           %li
-            = link_to "info"
+            = link_to "info", url_for(:info), :class => is_active?("Info")
           %li &#47;&#47;
           %li
             = link_to "resume", url_for(:resume), :class => is_active?("Resume")
@@ -24,7 +24,7 @@
             = link_to "work"
           %li &#47;&#47;
           %li
-            = link_to "interact"
+            = link_to "interact", url_for(:interact), :class => is_active?("Interact")
       .clear
     #main
       #content
@@ -59,7 +59,6 @@
           %br
           %span.credit by Jason Fried and David Henemeier Hansson
         /
-          = image_tag "https://www.tungle.me/public/emachnic/busyicon", :class => "tungle-me", :teml => "emachnic"
           %object{ :type => "application/x-shockwave-flash", :data => "https://clients4.google.com/voice/embed/webCallButton",
           :width => "230", :height => "85" }
           %param{ :name => "movie", :value => "https://clients4.google.com/voice/embed/webCallButton" }

@@ -43,14 +43,16 @@ body {
     width: 72em; }
     body #content article {
       font-size: 1.6em; }
+      body #content article h1 {
+        font-size: 2em; }
+      body #content article a {
+        color: black; }
       body #content article > header {
         border-bottom: 1px dashed #aaaaaa;
         padding: 10px 0; }
         body #content article > header h2 {
           font-size: 1.625em;
           float: left; }
-          body #content article > header h2 a {
-            color: black; }
         body #content article > header .date {
           color: #555555;
           float: right;
@@ -121,5 +123,11 @@ body {
       body > footer p a {
         color: black; }
 
+.img_flt_rt {
+  float: right; }
+
 .clear {
   clear: both; }
+
+.strike {
+  text-decoration: line-through; }

@@ -47,14 +47,16 @@ body
     :width $page_width - ($page_width * .25)
     article
       :font-size 1.6em
+      h1
+        :font-size 2em
+      a
+        :color #000
       > header
         :border-bottom $dashed_border
         :padding 10px 0
         h2
           :font-size 1.625em
           :float left
-          a
-            :color #000
         .date
           :color #555
           :float right
@@ -127,6 +129,9 @@ body
       :padding 1em
       a
         :color #000
-
+.img_flt_rt
+  :float right
 .clear
   :clear both
+.strike
+  :text-decoration line-through

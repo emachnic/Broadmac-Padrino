@@ -12,6 +12,14 @@ class Broadmac < Padrino::Application
     render '/resume'
   end
 
+  get :interact do
+    render '/interact'
+  end
+
+  get :info do
+    render '/info'
+  end
+
   ##
   # Application configuration options
   #
