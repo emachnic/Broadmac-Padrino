@@ -3,7 +3,7 @@ class CreateWorks < ActiveRecord::Migration
     create_table :works do |t|
       t.string :name, :limit => 100
       t.binary :photo
-      t.text :description, :limit => 500
+      t.text :description
     end
   end
 
