@@ -18,10 +18,15 @@ ActiveRecord::Base.configurations[:development] = {
   :database => Padrino.root('db', "broadmac_development.db")
 
 }
+postgres = URI.parse(ENV['DATABASE_URL'] || '')
 
 ActiveRecord::Base.configurations[:production] = {
-  :adapter => 'sqlite3',
-  :database => Padrino.root('db', "broadmac_production.db")
+  :adapter => 'postgresql',
+  :encoding => 'utf8',
+  :database => postgres.user,
+  :username => postgres.user,
+  :password => postgres.user,
+  :host     => postgres.host
 
 }
 

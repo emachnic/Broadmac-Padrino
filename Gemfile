@@ -17,3 +17,7 @@ gem 'rack-test', :require => "rack/test", :group => "test"
 
 # Padrino
 gem 'padrino', "0.9.15"
+
+group :production do
+  gem 'pg'
+end
