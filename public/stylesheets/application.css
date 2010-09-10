@@ -45,8 +45,8 @@ body {
       font-size: 1.6em; }
       body #content article h1 {
         font-size: 2em; }
-      body #content article h2 {
-        font-size: 1.5em;
+      body #content article h3 {
+        font-size: 1.25em;
         font-weight: bold; }
       body #content article a {
         color: black; }
