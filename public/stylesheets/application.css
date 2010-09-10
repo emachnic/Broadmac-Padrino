@@ -45,6 +45,9 @@ body {
       font-size: 1.6em; }
       body #content article h1 {
         font-size: 2em; }
+      body #content article h2 {
+        font-size: 1.5em;
+        font-weight: bold; }
       body #content article a {
         color: black; }
       body #content article > header {
@@ -60,6 +63,8 @@ body {
       body #content article > section p {
         line-height: 1.25em;
         padding: 0.625em 0; }
+        body #content article > section p a {
+          font-weight: bold; }
       body #content article > section .read_more p {
         float: right;
         padding-top: 0;
