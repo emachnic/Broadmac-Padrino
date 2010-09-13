@@ -49,7 +49,7 @@ body
       :font-size 1.6em
       h1
         :font-size 2em
-      h3
+      h2
         :font
           :size 1.25em
           :weight bold
@@ -58,7 +58,7 @@ body
       > header
         :border-bottom $dashed_border
         :padding 10px 0
-        h2
+        h1
           :font-size 1.625em
           :float left
         .date
@@ -71,6 +71,8 @@ body
           :padding .625em 0
           a
             :font-weight bold
+            &:visited
+              :color #444
         .read_more
           p
             :float right
@@ -84,6 +86,11 @@ body
           :size 1.25em
           :weight bold
         :padding-top 1.25em
+      h3
+        :font
+          :style italic
+          :weight bold
+        :padding-left 1.25em
       p
         :line-height 1.25em
         :padding-left 1.25em
@@ -94,6 +101,8 @@ body
         :font-weight bold
         &.std
           :font-weight normal
+        &:visited
+          :color #444
       ul
         :list-style circle
         :margin-left 2.5em
@@ -110,8 +119,8 @@ body
     :float right
     :padding-top 2em
     :width $page_width - ($page_width * .80)
-    h2
-      :font-size 2.4em
+    h3
+      :font-size 2em
     ul
       :list-style circle
       :margin .5em 0 2em 2em
@@ -140,6 +149,8 @@ body
       :padding 1em
       a
         :color #000
+    .validations
+      :float right
 
 section.work
   :border 1px solid #999

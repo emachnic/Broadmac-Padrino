@@ -45,7 +45,7 @@ body {
       font-size: 1.6em; }
       body #content article h1 {
         font-size: 2em; }
-      body #content article h3 {
+      body #content article h2 {
         font-size: 1.25em;
         font-weight: bold; }
       body #content article a {
@@ -53,7 +53,7 @@ body {
       body #content article > header {
         border-bottom: 1px dashed #aaaaaa;
         padding: 10px 0; }
-        body #content article > header h2 {
+        body #content article > header h1 {
           font-size: 1.625em;
           float: left; }
         body #content article > header .date {
@@ -65,6 +65,8 @@ body {
         padding: 0.625em 0; }
         body #content article > section p a {
           font-weight: bold; }
+          body #content article > section p a:visited {
+            color: #444444; }
       body #content article > section .read_more p {
         float: right;
         padding-top: 0;
@@ -75,6 +77,10 @@ body {
       font-size: 1.25em;
       font-weight: bold;
       padding-top: 1.25em; }
+    body #content .resume h3 {
+      font-style: italic;
+      font-weight: bold;
+      padding-left: 1.25em; }
     body #content .resume p {
       line-height: 1.25em;
       padding-left: 1.25em; }
@@ -85,6 +91,8 @@ body {
       font-weight: bold; }
       body #content .resume a.std {
         font-weight: normal; }
+      body #content .resume a:visited {
+        color: #444444; }
     body #content .resume ul {
       list-style: circle;
       margin-left: 2.5em;
@@ -101,8 +109,8 @@ body {
     float: right;
     padding-top: 2em;
     width: 19.2em; }
-    body #sidebar h2 {
-      font-size: 2.4em; }
+    body #sidebar h3 {
+      font-size: 2em; }
     body #sidebar ul {
       list-style: circle;
       margin: 0.5em 0 2em 2em; }
@@ -131,6 +139,8 @@ body {
       padding: 1em; }
       body > footer p a {
         color: black; }
+    body > footer .validations {
+      float: right; }
 
 section.work {
   border: 1px solid #999999;

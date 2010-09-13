@@ -31,7 +31,7 @@
       #content
         = yield
       #sidebar
-        %h2 Favorite Sites
+        %h3 Favorite Sites
         %ul
           %li
             = link_to "A List Apart", "http://www.alistapart.com"
@@ -43,7 +43,7 @@
             = link_to "Signal vs. Noise", "http://37signals.com/svn"
           %li
             = link_to "TeachMeToCode", "http://teachmetocode.com"
-        %h2 Books I Like
+        %h3 Books I Like
         %p.book
           = link_to image_tag("tpp.jpg", :alt => "Pragmatic Programmer Cover", :title => "The Pragmatic Programmer"), "http://pragprog.com/titles/tpp/the-pragmatic-programmer"
           = link_to "The Pragmatic Programmer: From Journeyman to Master", "http://pragprog.com/titles/tpp/the-pragmatic-programmer"
@@ -66,6 +66,11 @@
           %param{ :name => "wmode", :value => "transparent" }
           %param{ :name => "FlashVars", :value => "id=c21474293bfa9a582a54e84190b22b2ad222ad56&style=0" }
     %footer
+      %p.validations
+        Valid
+        = link_to "HTML5", "http://validator.w3.org/check?uri=http%3A%2F%2Fbroadmac.net%2F"
+        and
+        = link_to "CSS3", "http://jigsaw.w3.org/css-validator/validator?uri=broadmac.net&profile=css3&usermedium=all&warning=1"
       %p
         Copywrite &copy; 2010
         &#47;&#47;
