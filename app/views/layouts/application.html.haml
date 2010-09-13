@@ -4,7 +4,8 @@
     %meta{ :charset => "utf-8" }
     %title
       = ["Evan Machnic", @title].compact.join(" => ")
-    = stylesheet_link_tag "reset", "application"
+    = stylesheet_link_tag "reset", "application", :media => 'screen'
+    = stylesheet_link_tag 'print', :media => 'print'
     = javascript_include_tag 'jquery', 'application', 'html5'
     = javascript_include_tag "https://www.tungle.me/portal/js/plugins/tungle.mwmWidget.js"
   %body
