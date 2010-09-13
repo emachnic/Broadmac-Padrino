@@ -69,8 +69,6 @@ body {
         float: right;
         padding-top: 0;
         padding-right: 2em; }
-        body #content article > section .read_more p a {
-          font-weight: bold; }
     body #content .resume h1 {
       font-size: 2.5em; }
     body #content .resume h2 {
@@ -117,7 +115,7 @@ body {
       clear: both;
       font-size: 1.4em;
       padding: 1em 0; }
-      body #sidebar .book .credit {
+      body #sidebar .book span {
         color: #333333;
         font-size: 0.714em; }
       body #sidebar .book a {
