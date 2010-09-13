@@ -3,7 +3,7 @@ a {
   a:hover {
     text-decoration: underline; }
 
-header, footer, article, section, nav, aside, hgroup {
+header, footer, article, section, nav, aside, hgroup, figure {
   display: block; }
 
 body > header, body > #main, body > footer {
@@ -119,16 +119,16 @@ body {
         padding: 0.5em 0; }
         body #sidebar ul li a {
           color: #333333; }
-    body #sidebar .book {
+    body #sidebar figure {
       clear: both;
       font-size: 1.4em;
       padding: 1em 0; }
-      body #sidebar .book span {
+      body #sidebar figure span {
         color: #333333;
         font-size: 0.714em; }
-      body #sidebar .book a {
+      body #sidebar figure a {
         color: black; }
-        body #sidebar .book a img {
+        body #sidebar figure a img {
           float: left;
           padding-right: 0.5em; }
   body > footer {

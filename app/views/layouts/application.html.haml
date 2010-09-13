@@ -44,21 +44,24 @@
           %li
             = link_to "TeachMeToCode", "http://teachmetocode.com"
         %h3 Books I Like
-        %p.book
+        %figure
           = link_to image_tag("tpp.jpg", :alt => "Pragmatic Programmer Cover", :title => "The Pragmatic Programmer"), "http://pragprog.com/titles/tpp/the-pragmatic-programmer"
-          = link_to "The Pragmatic Programmer: From Journeyman to Master", "http://pragprog.com/titles/tpp/the-pragmatic-programmer"
-          %br
-          %span by Andrew Hunt and David Thomas
-        %p.book
+          %figcaption
+            = link_to "The Pragmatic Programmer: From Journeyman to Master", "http://pragprog.com/titles/tpp/the-pragmatic-programmer"
+            %br
+            %span by Andrew Hunt and David Thomas
+        %figure
           = link_to image_tag("rails_tutorial.png", :alt => "Rails Tutorial Logo", :title => "Rails Tutorial"), "http://railstutorial.org"
-          = link_to "Rails Tutorial", "http://railstutorial.org"
-          %br
-          %span by Michael Hartl
-        %p.book
+          %figcaption
+            = link_to "Rails Tutorial", "http://railstutorial.org"
+            %br
+            %span by Michael Hartl
+        %figure
           = link_to image_tag("rework.jpg", :alt => "Rework Cover", :title => "Rework"), "http://37signals.com/rework"
-          = link_to "Rework", "http://37signals.com/rework"
-          %br
-          %span Jason Fried and David Henemeier Hansson
+          %figcaption
+            = link_to "Rework", "http://37signals.com/rework"
+            %br
+            %span Jason Fried and David Henemeier Hansson
         /
           %object{ :type => "application/x-shockwave-flash", :data => "https://clients4.google.com/voice/embed/webCallButton",
           :width => "230", :height => "85" }
