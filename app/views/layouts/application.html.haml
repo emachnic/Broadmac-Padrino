@@ -6,10 +6,14 @@
       = ["Evan Machnic", @title].compact.join(" => ")
     = stylesheet_link_tag "reset", "application", :media => 'screen'
     = stylesheet_link_tag 'print', :media => 'print'
-    = javascript_include_tag 'jquery', 'application', 'html5'
+    = stylesheet_link_tag 'http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css', :media => 'mobile'
+    = javascript_include_tag 'jquery-1.4.4.min.js', 'http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js'
+    = javascript_include_tag 'application'
+    /[if lt IE 9]
+      = javascript_include_tag 'html5'
     = javascript_include_tag "https://www.tungle.me/portal/js/plugins/tungle.mwmWidget.js"
-  %body
-    %header
+  %body( data-role='page' )
+    %header( data-role='header' )
       = link_to image_tag("evan_machnic_logo-nq8.png", :alt => "Evan Machnic Logo", :title => "Evan Machnic Home"), "/"
       %nav
         %ul
@@ -28,7 +32,7 @@
           %li
             = link_to "interact", url_for(:interact), :class => is_active?("Interact")
       .clear
-    #main
+    #main( data-role='content' )
       #content
         = yield
       #sidebar
@@ -69,7 +73,7 @@
           %param{ :name => "movie", :value => "https://clients4.google.com/voice/embed/webCallButton" }
           %param{ :name => "wmode", :value => "transparent" }
           %param{ :name => "FlashVars", :value => "id=c21474293bfa9a582a54e84190b22b2ad222ad56&style=0" }
-    %footer
+    %footer( data-role="footer" )
       %p.validations
         Valid
         = link_to "HTML5", "http://validator.w3.org/check?uri=http%3A%2F%2Fbroadmac.net%2F"

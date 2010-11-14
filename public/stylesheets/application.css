@@ -19,7 +19,6 @@ body {
     body > header a img {
       float: left;
       height: 11.3em;
-      image-rendering: -moz-crisp-edges;
       width: 30em; }
     body > header nav {
       float: right;
