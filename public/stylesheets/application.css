@@ -1,3 +1,12 @@
+@font-face {
+  font-family: Delicious;
+  font-src: url("../fonts/Delicious-Roman.otf"); }
+
+@font-face {
+  font-family: Delicious;
+  font-src: url("../fonts/Delicious-Bold.otf");
+  font-weight: bold; }
+
 a {
   text-decoration: none; }
   a:hover {
@@ -11,7 +20,7 @@ body > header, body > #main, body > footer {
   width: 96em; }
 
 body {
-  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-family: Delicious, sans-serif;
   font-size: 62.5%; }
   body > header {
     border-bottom: 1px solid black;
@@ -45,6 +54,9 @@ body {
       font-size: 1.6em; }
       body #content article h1 {
         font-size: 2em; }
+        body #content article h1 .hint {
+          color: #555555;
+          font-size: 0.5em; }
       body #content article h2 {
         font-size: 1.25em;
         font-weight: bold; }

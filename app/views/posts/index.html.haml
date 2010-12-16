@@ -1,4 +1,5 @@
 - @title = "Writing"
-
+- content_for :head do
+  = javascript_include_tag 'application'
 #posts
   = partial 'posts/post', :collection => @posts

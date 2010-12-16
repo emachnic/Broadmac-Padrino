@@ -7,9 +7,10 @@
     = stylesheet_link_tag "reset", "application", :media => 'screen'
     = stylesheet_link_tag 'print', :media => 'print'
     = stylesheet_link_tag 'http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css', :media => 'mobile'
+    = javascript_include_tag 'jquery-1.4.4.min.js'
     /
-      = javascript_include_tag 'jquery-1.4.4.min.js', 'http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js'
-    = javascript_include_tag 'application'
+      = javascript_include_tag 'http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js'
+    = yield_content :head
     /[if lt IE 9]
       = javascript_include_tag 'html5'
     = javascript_include_tag "https://www.tungle.me/portal/js/plugins/tungle.mwmWidget.js"
