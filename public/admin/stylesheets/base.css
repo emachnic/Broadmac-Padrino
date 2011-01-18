@@ -69,6 +69,7 @@ input.check_box{margin:0;padding:0;}
 .form .columns .left{float:left;}
 .form .columns .right{float:right;}
 .form label,.form input.text_field,.form input.password_field,.form textarea.text_area{font-size:1.0em;padding:2px 0;margin:0;color:#36393D;}
+.form textarea.text_area{height: 300px;}
 .form label.right{text-align:right;}
 .form input.check_box,.form input.radio{margin-right:5px;}
 .form label.check_box,.form label.radio{line-height:1.5em;}

@@ -3,6 +3,15 @@ $page_width: 96em
 $dashed_border: 1px dashed #aaa
 $solid_border: 1px solid black
 
+@font-face
+  :font
+    :family Delicious
+    :src url('../fonts/Delicious-Roman.otf')
+@font-face
+  :font
+    :family Delicious
+    :src url('../fonts/Delicious-Bold.otf')
+    :weight bold
 a
   :text-decoration none
   &:hover
@@ -49,6 +58,9 @@ body
       :font-size 1.6em
       h1
         :font-size 2em
+        .hint
+          :color #555
+          :font-size .5em
       h2
         :font
           :size 1.25em

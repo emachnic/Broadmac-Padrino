@@ -1,16 +1,14 @@
 %article
   %header
     %h1
-      = link_to post.title, url_for(:posts, :show, :id => post)
+      = link_to post.title
+      %br
+      %span.hint (click post title to toggle story)
     .date
       Created
       = time_ago_in_words(post.created_at || Time.now) + ' ago'
     .clear
   %section
-    %p
-      = truncate(post.body, :length => 500)
+    = post.body
     .read_more
-      %p
-        = link_to "read more", url_for(:posts, :show, :id => post)
-      .clear
       %hr
