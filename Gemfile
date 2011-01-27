@@ -9,7 +9,7 @@ gem 'thin' # or mongrel
 gem 'haml'
 gem 'activerecord', :require => "active_record"
 gem 'sqlite3-ruby', :require => "sqlite3"
-gem 'rack_hoptoad'
+gem 'hoptoad_notifier'
 
 # Test requirements
 gem 'rspec', :require => "spec", :group => "test"

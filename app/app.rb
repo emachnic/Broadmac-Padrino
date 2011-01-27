@@ -2,6 +2,7 @@ class Broadmac < Padrino::Application
   register SassInitializer
   register Padrino::Mailer
   register Padrino::Helpers
+  use HoptoadNotifier::Rack
   enable :raise_errors
 
   get '/' do
