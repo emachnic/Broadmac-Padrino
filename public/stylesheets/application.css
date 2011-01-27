@@ -20,7 +20,7 @@ body > header, body > #main, body > footer {
   width: 96em; }
 
 body {
-  font-family: Delicious, sans-serif;
+  font-family: sans-serif;
   font-size: 62.5%; }
   body > header {
     border-bottom: 1px solid black;

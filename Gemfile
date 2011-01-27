@@ -9,6 +9,7 @@ gem 'thin' # or mongrel
 gem 'haml'
 gem 'activerecord', :require => "active_record"
 gem 'sqlite3-ruby', :require => "sqlite3"
+gem 'rack_hoptoad'
 
 # Test requirements
 gem 'rspec', :require => "spec", :group => "test"
@@ -18,6 +19,4 @@ gem 'rack-test', :require => "rack/test", :group => "test"
 # Padrino
 gem 'padrino', "0.9.19"
 
-group :production do
-  gem 'pg'
-end
+gem 'pg'
