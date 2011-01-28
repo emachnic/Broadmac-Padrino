@@ -10,6 +10,7 @@ gem 'haml'
 gem 'activerecord', :require => "active_record"
 gem 'sqlite3-ruby', :require => "sqlite3"
 gem 'hoptoad_notifier'
+gem 'heroku'
 
 # Test requirements
 gem 'rspec', :require => "spec", :group => "test"

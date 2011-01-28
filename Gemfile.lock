@@ -14,10 +14,15 @@ GEM
     arel (1.0.1)
       activesupport (~> 3.0.0)
     builder (2.1.2)
+    configuration (1.2.0)
     daemons (1.1.0)
     eventmachine (0.12.10)
     git (1.2.5)
     haml (3.0.18)
+    heroku (1.17.10)
+      json (~> 1.4.6)
+      launchy (~> 0.3.2)
+      rest-client (>= 1.4.0, < 1.7.0)
     hoptoad_notifier (2.4.2)
       activesupport
       builder
@@ -25,6 +30,10 @@ GEM
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
     i18n (0.4.1)
+    json (1.4.6)
+    launchy (0.3.7)
+      configuration (>= 0.0.5)
+      rake (>= 0.8.1)
     mail (2.2.10)
       activesupport (>= 2.3.6)
       i18n (~> 0.4.1)
@@ -64,6 +73,8 @@ GEM
     rack-test (0.5.4)
       rack (>= 1.0)
     rake (0.8.7)
+    rest-client (1.6.1)
+      mime-types (>= 1.16)
     rspec (1.3.0)
     sinatra (1.1.0)
       rack (~> 1.1)
@@ -87,6 +98,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   haml
+  heroku
   hoptoad_notifier
   padrino (= 0.9.19)
   pg
