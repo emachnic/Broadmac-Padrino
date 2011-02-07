@@ -3,7 +3,10 @@
   %head
     %meta{ :charset => "utf-8" }
     %title
-      = ["Evan Machnic", @title].compact.join(" => ")
+      - if @title
+        = ["Evan Machnic", @title].compact.join(" => ")
+      - else
+        = "Evan Machnic"
     = stylesheet_link_tag "reset", "application", :media => 'screen'
     = stylesheet_link_tag 'print', :media => 'print'
     = stylesheet_link_tag 'http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css', :media => 'mobile'
