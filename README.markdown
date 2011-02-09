@@ -1,4 +1,4 @@
-# Evan Machnic's Interactive Resume
+# Evan Machnic's Interactive Resume and Blog
 
 I am a freelance [Ruby on Rails](http://rubyonrails.org) developer based in Tallahassee, FL. This is the source
 for my site which can be found at http://broadmac.net. I used the [Padrino](http://padrinorb.com) framework
